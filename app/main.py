@@ -85,7 +85,7 @@ app.add_middleware(
 app.include_router(posts_router)
 
 
-@app.get("/", response_model=HealthResponse)
+@app.api_route("/", methods=["GET", "HEAD"], response_model=HealthResponse)
 def home() -> HealthResponse:
     return HealthResponse(message="Backend is working!")
 

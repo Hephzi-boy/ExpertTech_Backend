@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 .env
+tech_assess_backend.db
+tech_assess_backend.db-shm
+tech_assess_backend.db-wal
